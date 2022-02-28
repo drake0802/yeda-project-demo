@@ -1,7 +1,10 @@
 # yeda-project-demo
 
 ## 本样例工程提供了上传题目和答案的方法，请参考verilog和hls样例工程修改题目工程源文件：
-
+<br />
+yeda项目地址：http://118.31.188.115:8008/
+<br />
+0.origin分支是hls和verilog样例工程源文件，master分支是修改后用于出题的工程文件，可以参考分支的不同进行工程修改
 1.在工程文件夹中加入problem.conf，指定题目所需要的文件，用于运行题目工程  
 2.在工程文件夹中加入answer.conf，指定题目所需要的答案，用于验证题目工程  
 3.hls工程需要将源工程testbench的cpp文件进行适当修改，加入结果参数写入json文件相关的逻辑（例如tb.cpp），并新建模板文件保存未修改的testbench代码（例如tb.cpp.template）  
