@@ -1,0 +1,7 @@
+
+#define N 10
+
+void top(int a[N], int b[N], int dout[N])
+{
+    // put your codes here.
+}

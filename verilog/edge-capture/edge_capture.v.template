@@ -1,0 +1,10 @@
+module edge_capture(
+    input clk,
+    input reset,
+    input [31:0] in,
+    output [31:0] out
+);
+ 
+    // put your code here..
+    
+endmodule
