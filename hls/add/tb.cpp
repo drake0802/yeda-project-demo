@@ -1,12 +1,4 @@
 #include <stdio.h>
-#include "json.hpp"
-#include <iostream>
-#include <fstream>
-#include <cstring>
-#include <sstream>
-#include <stdlib.h>
-
-using json = nlohmann::json;
 
 #define N 10
 #define TEST_NUM 10
@@ -45,14 +37,6 @@ int main()
                 match = validate(c, c_ref);
                 if(!match)  error_count++;
         }
-        json result;
-        result["error_count"] = error_count;
-        std::string res_str = result.dump();
-        std::cout << res_str << std::endl;
-
-        std::ofstream out("result.json");
-        out << res_str;
-        out.close();
 
         if (error_count>0)
         {
@@ -64,4 +48,6 @@ int main()
                 printf("TEST SUCCESS!\n");
                 return 0;
         }
+
 }
+
