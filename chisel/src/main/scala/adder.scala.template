@@ -1,0 +1,9 @@
+// adder.scala
+package test
+ 
+import chisel3._
+ 
+class Adder(n: Int) extends Module {
+  // put your code here.
+}
+ 
